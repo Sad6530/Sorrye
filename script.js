@@ -75,3 +75,21 @@ window.addEventListener('load', revealOnScroll); // প্রথম লোডে
   toggle.addEventListener('click', () => {
     nav.classList.toggle('active');
   });
+
+
+
+
+
+
+
+ document.addEventListener("DOMContentLoaded", function () {
+    const skills = document.querySelectorAll('.skill');
+    skills.forEach(skill => {
+      skill.addEventListener('mouseover', () => {
+        skill.style.backgroundColor = '#ffd700';
+      });
+      skill.addEventListener('mouseout', () => {
+        skill.style.backgroundColor = '#667445';
+      });
+    });
+  });
